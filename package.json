@@ -4,7 +4,8 @@
   "description": "A basic react.js application configured with webpack and babel",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
