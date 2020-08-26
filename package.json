@@ -1,0 +1,25 @@
+{
+  "name": "scratch-react",
+  "version": "1.0.0",
+  "description": "A basic react.js application configured with webpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbaugh1/scratch-react.git"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "babel",
+    "webpack"
+  ],
+  "author": "Nick Baughman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbaugh1/scratch-react/issues"
+  },
+  "homepage": "https://github.com/nbaugh1/scratch-react#readme"
+}
