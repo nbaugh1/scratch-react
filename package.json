@@ -1,6 +1,9 @@
 {
   "name": "@nbaugh1/scratch-react",
   "version": "1.0.0",
+  "bin": {
+    "scratch-react": "./some-file.js"
+  },
   "description": "A basic react.js application configured with webpack and babel",
   "main": "index.js",
   "scripts": {
