@@ -7,7 +7,7 @@
   "description": "A basic react.js application configured with webpack and babel",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode development"
   },
@@ -30,10 +30,13 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "jest": "^26.4.2",
+    "react-test-renderer": "^16.13.1",
     "style-loader": "^0.23.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
@@ -43,5 +46,24 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21"
+  },
+  "jest": {
+    "modulePaths": [
+      "/shared/vendor/modules"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js",
+      "^config$": "<rootDir>/configs/app-config.js"
+    }
   }
 }
